@@ -1,7 +1,6 @@
-
 <html>
 <head>
-<title>comedy central</title>
+<title>tyc</title>
 <meta name="robots" content="noindex">
 <meta content='width=device-width, initial-scale=1' name='viewport'>	
 <meta http-equiv="Content-Language" content="es" />	
@@ -19,13 +18,19 @@ description: "",
 image: "",
 "sources": [{
 "default": true,
-"file": '//lab.cdn.rcs.net.ar/mnp/tyc/output.mpd',
+"file": "https://d291lmh5jyqaj1.cloudfront.net/out/v1/05beb72032f5421489943241272a989b/009_dash_widevine_playready.mpd",
+  drm: {
+    widevine: {
+      url: "https://widevine-dash.ezdrm.com/widevine-php/widevine-foreignkey.php?pX=91EC58",
+      certificateUrl: null
+    }
+  },
 "type": ""
 }]
 }], 
 width: "100%", 
 height: "100%", 
-autostart: false, 
+autostart: true, 
 cast: {}
 });
 jwplayer("player").on('play', function(e) {

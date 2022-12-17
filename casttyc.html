@@ -1,6 +1,7 @@
+
 <html>
 <head>
-<title>tyc</title>
+<title>comedy central</title>
 <meta name="robots" content="noindex">
 <meta content='width=device-width, initial-scale=1' name='viewport'>	
 <meta http-equiv="Content-Language" content="es" />	
@@ -16,14 +17,15 @@ playlist: [{
 title : "",
 description: "",
 image: "",
-   "sources": [{
-"file": "https://lab.cdn.rcs.net.ar/mnp/comedy/output.mpd",
+"sources": [{
+"default": true,
+"file": '//lab.cdn.rcs.net.ar/mnp/tyc/output.mpd',
 "type": ""
 }]
 }], 
 width: "100%", 
 height: "100%", 
-autostart: true, 
+autostart: false, 
 cast: {}
 });
 jwplayer("player").on('play', function(e) {

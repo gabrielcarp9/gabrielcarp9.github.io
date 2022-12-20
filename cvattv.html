@@ -1,34 +1,32 @@
 <html>
 <head>
 <title>26_TV_HD</title>
+<meta name="robots" content="noindex">
 <meta content='width=device-width, initial-scale=1' name='viewport'>	
 <meta http-equiv="Content-Language" content="es" />	
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 <body  style="padding: 0px; margin:0px;"><body>
 <meta name='referrer' content='no-referrer' />
-<script src="//ssl.p.jwpcdn.com/player/v/8.25.7/jwplayer.js"></script>    
-<script>jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo"</script>
-	<div id="player">Cargando Canal (si este cartel persiste, reinicie el canal)...</div>
-	<script>
-	  var playerInstance = jwplayer("player");
-	  playerInstance.setup({
-	    playlist: [{
-	      "sources": [{
-	        "file": "https://edge-mix02-cen.cvattv.com.ar/live/c6eds/26_TV_HD/SA_Live_dash_enc/26_TV_HD.mpd",
-	        "drm": {
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script>
+<div id="oper"></div>
+<div id="vid"></div>
+<script>
+ player = new Clappr.Player({
+ source: "https://edge-mix02-cen.cvattv.com.ar/live/c6eds/26_TV_HD/SA_Live_dash_enc/26_TV_HD.mpd",
+	 	        "drm": {
 	          "clearkey": {
 	            "key": "ad60c5e1d378a97271bf8688f094d092",
 	            "keyId": "e32aaa4b67430b3b51be1efce5a74ac5"
 	          }
 	        },
-			}]
-		}],
-	    width: "100%",
-	    height: "100%",
-	    autostart": true,
-	    cast: {}
-	  });
-	</script>
+ mimeType: "application/x-mpegURL",
+ autoPlay: true, 
+ height: "100%",
+ width: "100%",
+ plugins: {"core": [LevelSelector]}, 
+ parentId: "#vid"});
+</script>
 </body>
 </head>
 </html>

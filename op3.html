@@ -8,30 +8,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 <body  style="padding: 0px; margin:0px;"><body>
 <meta name='referrer' content='no-referrer' />
-<script type='text/javascript' src="//ssl.p.jwpcdn.com/player/v/8.25.0/jwplayer.js"></script> 
-<script type='text/javascript'>jwplayer.key='XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo'</script>
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script>
 <div id="player">CARGANDO...</div>
-<script type='text/javascript'>
-	  jwplayer("player").setup({
-	    playlist: [{
-	      title: "",
-	      description: "",
-	      image: "",
-	      "sources": [{
-	        "default": true,
-	        "file": '//live-edge01.telecentro.net.ar:1935/live/26hd-720/playlist.m3u8',
-	        "type": ""
-	}]
-	}],
-	    width: "100%",
-	    height: "100%",
-	    autostart: true,
-	    cast: {}
-	  });
-	  jwplayer("player").on('play', function(e) {
-	    jwplayer().setCurrentAudioTrack();
-	  });
-	</script>
+<div id="oper"></div>
+<div id="vid"></div>
+<script>
+ player = new Clappr.Player({
+ source: "http://live-edge01.telecentro.net.ar:1935/live/26hd-720/playlist.m3u8",
+ mimeType: "application/x-mpegURL",
+ autoPlay: true, 
+ height: "400",
+ width: "100%",
+ plugins: {"core": [LevelSelector]}, 
+ parentId: "#vid"});
+</script>
 </body>
 </head>
 </html>

@@ -10,6 +10,8 @@
 <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script>
 <script src="https://raw.githubusercontent.com/shankardevy/clappr-dash-plugin/develop/dist/clappr_dash.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/clappr/clappr@latest/dist/clappr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
 <div id="oper"></div>
 <div id="vid"></div>
 <script>
@@ -25,7 +27,7 @@
  autoPlay: true, 
  height: "100%",
  width: "100%",
- plugins: {"core": [LevelSelector]}, {"playback": [ClapprDash]},
+ plugins: {"playback": [ClapprDash]},
  parentId: "#vid"});
 </script>
 </body>

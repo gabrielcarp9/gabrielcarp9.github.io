@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>IND_OPCION</title>
+<body  style="padding: 0px; margin:0px;"><body>
+<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>    
+<script>jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo"</script>
+<div id="player">Cargando Canal (si este cartel persiste, reinicie el canal)...</div>
+<script> 
+jwplayer("player").setup({ 
+file: "SOURCE", 
+type: "HLS",
+width: "100%",
+height: "100%",
+autostart: true,
+sharing: {},
+cast: {}
+}); 
+jwplayer().on('play', function(e) {
+jwplayer().setCurrentAudioTrack(1);
+});
+</script>
+</body>
+</head>
+</html>

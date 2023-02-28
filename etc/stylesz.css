@@ -1,0 +1,4 @@
+body {margin: 0;}
+.canals .crd {display: inline-block;background: #4E7659;width: 130px;height: 90px;margin: 10px;border-radius: 15%;}
+.canals .crd img {margin: auto;top: 0;left: 0;right: 0;bottom: 0;position: absolute;}
+.topcanales {position: relative;display: inline-block;}

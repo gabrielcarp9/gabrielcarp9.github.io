@@ -16,7 +16,10 @@ height: "100%",
 autostart: true,
 sharing: {},
 cast: {}
-}); 
+});
+jwplayer().on('play', function(e) {
+jwplayer().setCurrentAudioTrack(1);
+  }); 
 </script>
 </body>
 </head>

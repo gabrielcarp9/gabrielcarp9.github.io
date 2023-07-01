@@ -7,16 +7,19 @@
 <div id="player">Cargando Canal (si este cartel persiste, reinicie el canal)...</div>
 <script> 
 jwplayer("player").setup({ 
-file: "https://edge-live01-cen.cvattv.com.ar/live/c6eds/America_Sports/SA_Live_dash_enc_2A/America_Sports.mpd", 
+file: "https://edge-mix02-cen.cvattv.com.ar/live/c7eds/Fox_Sports_Premiun_HD/SA_Live_dash_enc/Fox_Sports_Premiun_HD.mpd", 
 type: "dash",
-drm: {"clearkey": {"key": "fee0f87a0527497351fc54ce36ad1de2",
-		 "keyId": "a0aa01337a2148bda1e21862295ae037"}},
+drm: {"clearkey": {"key": "02828e6346a46e61e965202cd8787e3a",
+		 "keyId": "0f48f9e79f54b38d619fd25565c4d14b"}},
 width: "100%",
 height: "100%",
 autostart: true,
 sharing: {},
 cast: {}
-}); 
+});
+jwplayer().on('play', function(e) {
+jwplayer().setCurrentAudioTrack(1);
+  }); 
 </script>
 </body>
 </head>

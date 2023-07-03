@@ -7,10 +7,8 @@
 <div id="player">Cargando Canal (si este cartel persiste, reinicie el canal)...</div>
 <script> 
 jwplayer("player").setup({ 
-file: "SOURCE", 
-type: "dash",
-drm: {"clearkey": {"key": "KEY",
-		 "keyId": "KEYID"}},
+file: "https://usher.ttvnw.net/api/channel/hls/telediariotelevision.m3u8?player_type=pulsar&player_backend=mediaplayer&playlist_include_framerate=true&allow_source=true&transcode_mode=cbr_v1&token=%7B"adblock"%3Afalse%2C"authorization"%3A%7B"forbidden"%3Afalse%2C"reason"%3A""%7D%2C"blackout_enabled"%3Afalse%2C"channel"%3A"telediariotelevision"%2C"channel_id"%3A774059522%2C"chansub"%3A%7B"restricted_bitrates"%3A%5B%5D%2C"view_until"%3A1924905600%7D%2C"ci_gb"%3Afalse%2C"geoblock_reason"%3A""%2C"device_id"%3A"beQWGpGxJgyDAPiCB9fkIArVDyl0vZWe"%2C"expires"%3A1688403442%2C"extended_history_allowed"%3Afalse%2C"game"%3A""%2C"hide_ads"%3Afalse%2C"https_required"%3Atrue%2C"mature"%3Afalse%2C"partner"%3Afalse%2C"platform"%3A"web"%2C"player_type"%3A"pulsar"%2C"private"%3A%7B"allowed_to_view"%3Atrue%7D%2C"privileged"%3Afalse%2C"role"%3A""%2C"server_ads"%3Atrue%2C"show_ads"%3Atrue%2C"subscriber"%3Afalse%2C"turbo"%3Afalse%2C"user_id"%3A921760168%2C"user_ip"%3A"190.246.169.10"%2C"version"%3A2%7D&sig=52e0134184296b60f71c0cd178cf5f2de4850c03&cdm=wv&player_version=1.19.0", 
+type: "hls",
 width: "100%",
 height: "100%",
 autostart: true,
